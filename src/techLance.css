@@ -1,0 +1,247 @@
+:root {
+    --bgColor: #D2D1D1;
+    --primaryColor: #29ABFF;
+    --secondaryColor: #39C596;
+    --fieldColor: #F6FBFF;
+    --bodyTexts: rgba(0, 0, 0, 0.6);
+
+
+}
+
+/* -----------Create Account--------- */
+.container {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    column-gap: 10rem;
+    /* margin-top: 2rem; */
+}
+
+.createAccImg {
+    border-radius: 1rem;
+    contain: content;
+    background: linear-gradient(#29a9ff5d, white);
+    overflow: hidden;
+
+}
+.highlight{
+    color: red;
+}
+.new:hover{
+    background-color: var(--primaryColor);
+    color: white;
+    border-radius: 7px;
+    padding: 5px;
+}
+.leftText {
+    color: #29ABFF;
+    /* margin-top: 30rem; */
+    width: 27rem;
+    text-align: center;
+    contain: content;
+    margin: auto auto;
+
+}
+
+#techlance {
+    margin-top: 17px;
+    margin-left: 23px;
+}
+
+#guy {
+    margin-left: -65px;
+    contain: content;
+    width: max-content;
+}
+
+.verifyEmail {
+    margin-top: 30%;
+}
+
+#verifyMail {
+    width: 17rem;
+    text-align: center;
+    margin: auto;
+}
+
+#emailVerify {
+    background: #29ABFF;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    padding: 0.5rem;
+    color: #29ABFF;
+}
+
+.others {
+    text-align: center;
+
+}
+
+.cont {
+    display: flex;
+}
+
+#agreement {
+    margin-top: 15px;
+}
+
+#signup,
+#signup2,
+#signup3 {
+    background: var(--primaryColor);
+    color: white;
+    height: 3rem;
+}
+
+.headings {
+    text-align: center;
+
+}
+
+#first {
+    margin-right: 20px;
+}
+
+.google-signup:hover {
+    color: rgb(255, 255, 255);
+    background: #29ABFF;
+    border-radius: 5px;
+}
+
+#guy {
+    width: 650px;
+}
+
+.createAccText {
+    display: block;
+}
+
+.createAccountIP {
+    border: #29ABFF solid 2px;
+    width: 98%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    gap: 20px;
+    border-radius: 0.75rem;
+    color: var(--bodyTexts);
+}
+
+.forgotPassword {
+    color: #29ABFF;
+    display: flex;
+    float: right;
+}
+
+.OR {
+    color: var(--bgColor);
+}
+
+.signupTxt {
+    display: inline;
+    color: #637079;
+}
+
+.welcomeBack,
+.resetPassword {
+    width: 35vw;
+    text-align: center;
+    contain: content;
+    margin: auto auto;
+
+}
+
+#resetPassword {
+    width: 29rem;
+    margin: auto;
+}
+
+#checkEmail {
+    width: 25rem;
+    margin: auto;
+}
+
+/* .emailVerify{
+    width: 16rem;
+} */
+
+#techlanceOter {
+    display: none;
+}
+
+#icon {
+    display: none;
+}
+
+/* Media Queries */
+
+/* Create Account */
+@media only screen and (min-width: 250px) and (max-width: 900px) {
+    .createAccImg {
+        display: none;
+    }
+
+    .createAcc {
+        margin: 25px;
+    }
+
+    #techlanceOter {
+        display: block;
+        height: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-top: 40px; */
+    }
+
+    .container {
+        display: block;
+
+    }
+
+    .cont {
+        display: block;
+    }
+
+    .welcomeBack,.resetPassword {
+        text-align: center;
+        width: max-content;
+        text-align: center;
+        contain: none;
+    }
+    #resetPassword {
+        width: max-content;
+        margin: auto;
+    }
+
+
+
+    .headings>h1 {
+        font-size: 28px;
+        font-weight: 900;
+    }
+
+    .headings>h3 {
+        font-size: 16px;
+
+    }
+
+    .others>a {
+        display: none;
+    }
+
+    .others>i {
+        display: none;
+    }
+
+    #icon {
+        display: block;
+    }
+
+    #icon>i {
+        padding: 20px;
+    }
+
+
+
+}

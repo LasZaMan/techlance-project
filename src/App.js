@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Checkmail from './components/Checkmail';
+import Createaccount from './components/Createaccount';
+import Verifyemail from './components/Verifyemail';
+import Welcomeback from './components/Welcomeback';
+import './techLance.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Password from './components/Password';
+import ForgotPasswordForm from './components/ForgotPasswordForm';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path='/confirm' element={<Checkmail />} />
+          <Route path='/sign-in' element={<Welcomeback />} />
+          <Route path='/sign-up' element={<Createaccount />} />
+          <Route path='/reset-password' element={<ForgotPasswordForm />} />
+          <Route path='/check-mail' element={<Verifyemail />} />
+          <Route path='/reset-successfully' element={<Password />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

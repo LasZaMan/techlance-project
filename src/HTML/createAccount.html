@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="techLance.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="createAccImg">
+            <img src="Techlance Logo.png" width="150" id="techlance">
+            <br>
+            <img src="image 16.png" id="guy">
+            <h2 class="leftText">We make transitioning from learning to building seamless</h2>
+        </div>
+         
+        <div class="createAcc">
+            <img src="Techlance Logo.png"  id="techlanceOter">
+            <div class="headings">
+                <h1 class="createAccText">Create an account</h1>
+                <h3 class="createAccText">Please input your details as specified below</h3>
+            </div>
+            <form action="" onsubmit="return createAccount()">
+               
+                <div class="cont">
+                    <input type="text" id="first" class="createAccountIP" placeholder="E.g. Avery">
+                    <input type="text" id="second" class="createAccountIP" placeholder="E.g. Wilson">
+                </div>
+                <input type="email" id="third" class="createAccountIP" placeholder="E.g. somebody@example.com">
+                <input type="password" id="fourth" class="createAccountIP">
+                <input type="password" id="fifth" class="createAccountIP">
+                <p style="color: red;" id="passwords"></p>
+                <input type="checkbox" id="agreement" checked="" >
+                <label for="agreement">I agree to the terms and conditions</label>
+                <p style="color: red;" id="agree"></p>
+                <input type="submit" value="Sign Up" class="createAccountIP" id="signup">
+            </form>
+            <div class="others">
+                <h4 class="OR">OR</h4>
+                <br>
+                <div id="icon">
+                    <i class="fa fa-google" aria-hidden="true"></i> 
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </div>
+                <i class="fa fa-google" aria-hidden="true"></i><a href="" class="google-signup">Sign-up with
+                    Google</a>
+                <br><br>
+                <i class="fa fa-facebook-official" aria-hidden="true"></i><a href="" class="google-signup">Sign-up
+                    with Facebook</a>
+            </div>
+        </div>
+    </div>
+    <script src="techlance.js"></script>
+</body>
+
+</html>
